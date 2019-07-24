@@ -69,7 +69,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.sf.disable_backpressure=1 \
+    debug.sf.enable_gl_backpressure=1 \
     ro.opengles.version=196610
 
 # Media
