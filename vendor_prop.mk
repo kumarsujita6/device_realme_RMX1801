@@ -85,7 +85,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.hw=1 \
     debug.sf.latch_unsignaled=1 \
     debug.gralloc.enable_fb_ubwc=1 \
-    persist.debug.wfd.enable=1 \
     persist.demo.hdmirotationlock=false \
     ro.opengles.version=196610 \
     sdm.debug.disable_skip_validate=1 \
