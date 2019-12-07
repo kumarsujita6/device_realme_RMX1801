@@ -334,6 +334,8 @@ PRODUCT_PACKAGES += \
 # Seccomp
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec-seccomp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
+    init.recovery.qcom.usb.rc \
+    init.safailnet.rc
 
 # Sensors
 PRODUCT_PACKAGES += \
