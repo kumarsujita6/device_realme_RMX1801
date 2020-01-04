@@ -3127,6 +3127,7 @@ vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
 # Radio (IMS) - from lavender - V11.0.9.0.PFGINXM
+-app/uceShimService/uceShimService.apk
 lib64/libdiag_system.so|81a47cb3a8c4a040cc0144ae15684b4dfe4e0dd6
 lib64/libimscamera_jni.so|133fec4e7be337eb255eb226c4ff96ae53b94be7
 lib64/libimsmedia_jni.so|6b741c6ca5fc407d16fcfeb5a695fd485daad5b4
