@@ -1,3 +1,4 @@
+
 #
 # Copyright (C) 2018 The Android Open-Source Project
 #
@@ -135,7 +136,12 @@ PRODUCT_PACKAGES += \
     libstdc++.vendor \
     Snap
 
-# Camera Shim
+# Charging
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    product_charger_res_images
+
+# ConsumerIr
 PRODUCT_PACKAGES += \
     libcamera_sdm660_shim
 
