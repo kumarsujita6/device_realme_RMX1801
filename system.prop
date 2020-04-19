@@ -4,6 +4,9 @@ persist.bt.a2dp.aac_disable=true
 ro.bluetooth.emb_wp_mode=false
 ro.bluetooth.wipower=false
 
+# Camera
+persist.dualcam.lpm.enable=1
+
 # Memory optimizations
 ro.vendor.qti.sys.fw.bservice_enable=true
 
