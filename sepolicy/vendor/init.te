@@ -3,5 +3,8 @@ allow init sysfs_leds:file setattr;
 allow init sysfs_mmc:file setattr;
 allow init system_data_file:dir add_name;
 
+# dpmd
+allow init system_file:file { execute_no_trans };
+
 # spectrum
 allow init sysfs_devices_system_cpu:file write;
