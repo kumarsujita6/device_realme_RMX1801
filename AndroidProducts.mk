@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_RMX1801.mk
+    $(LOCAL_DIR)/ancient_RMX1801.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_RMX1801-user \
-    aosp_RMX1801-userdebug \
-    aosp_RMX1801-eng
+    ancient_RMX1801-user \
+    ancient_RMX1801-userdebug \
+    ancient_RMX1801-eng
