@@ -172,7 +172,7 @@ PRODUCT_PACKAGES += \
 
 # Doze
 PRODUCT_PACKAGES += \
-    RealmeParts
+    RealmeDoze
 
 # DRM
 PRODUCT_PACKAGES += \
