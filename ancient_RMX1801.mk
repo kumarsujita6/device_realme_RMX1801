@@ -29,6 +29,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
+ANCIENT_OFFICIAL := true
 
 # Use Gapps
 WITH_GAPPS := true
