@@ -19,4 +19,5 @@ allow system_app sysfs_mgain:file { open read getattr write };
 allow system_app sysfs_switch:dir search;
 allow system_app sysfs_switch:file rw_file_perms;
 
+binder_call(system_app, hal_touch_sdm660)
 binder_call(system_app, wificond)
