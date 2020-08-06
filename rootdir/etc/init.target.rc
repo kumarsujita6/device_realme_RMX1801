@@ -262,3 +262,9 @@ service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
     class main
     user root
     group system wakelock
+
+on property:persist.camera.HAL3.enabled=1
+    write /mnt/vendor/opporeserve/media/Camera/chv_set 1
+
+on property:persist.camera.HAL3.enabled=0
+    write /mnt/vendor/opporeserve/media/Camera/chv_set 0
