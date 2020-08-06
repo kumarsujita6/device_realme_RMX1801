@@ -18,8 +18,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Ancient stuff
-$(call inherit-product, vendor/ancient/config/common.mk)
+# Inherit some common Corvus stuff
+$(call inherit-product, vendor/du/config/common_full_phone.mk)
 
 # Inherit from Realme RMX1801
 $(call inherit-product, device/realme/RMX1801/device.mk)
@@ -29,14 +29,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
-ANCIENT_OFFICIAL := true
 
-# Use Gapps
-WITH_GAPPS := true
-TARGET_GAPPS_ARCH := arm64
-IS_PHONE := true
-
-PRODUCT_NAME := ancient_RMX1801
+PRODUCT_NAME := du_RMX1801
 PRODUCT_DEVICE := RMX1801
 PRODUCT_MANUFACTURER := OPPO
 PRODUCT_BRAND := oppo
@@ -52,4 +46,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="RMX1801" \
     PRIVATE_BUILD_DESC="sdm660_64-user 9 PKQ1.181121.001 eng.root.20200328.174802 release-keys"
 
-BUILD_FINGERPRINT := "google/blueline/blueline:10/QQ2A.200501.001.B2/6352890:user/release-keys"
+BUILD_FINGERPRINT := google/coral/coral:10/QQ3A.200805.001/6578210:user/release-keys

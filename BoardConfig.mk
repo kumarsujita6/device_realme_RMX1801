@@ -47,6 +47,7 @@ TARGET_USES_64_BIT_BINDER := true
 
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0 earlycon=msm_serial_dm,0xc170000 androidboot.hardware=qcom user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 sched_enable_hmp=1 sched_enable_power_aware=1 service_locator.enable=1 swiotlb=1 loop.max_part=7
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET     := 0x01000000
@@ -54,9 +55,8 @@ BOARD_PAGE_SIZE := 4096
 TARGET_KERNEL_ARCH := arm64
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_VERSION := r383902
 TARGET_KERNEL_SOURCE := kernel/realme/sdm660
-TARGET_KERNEL_CONFIG := rmx1801_defconfig
+TARGET_KERNEL_CONFIG := RMX1801_defconfig
 
 # APEX image
 DEXPREOPT_GENERATE_APEX_IMAGE := true
@@ -100,7 +100,7 @@ ifeq ($(HOST_OS),linux)
 endif
 
 # Display
-TARGET_SCREEN_DENSITY := 480
+TARGET_SCREEN_DENSITY := 480 
 
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
@@ -188,6 +188,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 # Sepolicy
 include device/qcom/sepolicy-legacy-um/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+SELINUX_IGNORE_NEVERALLOWS := true
 
 # WiFi
 BOARD_WLAN_DEVICE := qcwcn
@@ -207,3 +208,6 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
 -include vendor/realme/RMX1801/BoardConfigVendor.mk
+
+#DUP
+BUILD_BROKEN_DUP_RULES := true
