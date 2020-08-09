@@ -421,3 +421,7 @@ PRODUCT_BOOT_JARS += \
 # Recorder
 PRODUCT_PACKAGES += \
     OPScreenRecorder
+
+# Parts
+PRODUCT_PACKAGES += \
+    RealmeParts
