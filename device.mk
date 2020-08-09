@@ -1,4 +1,3 @@
-
 #
 # Copyright (C) 2018 The Android Open-Source Project
 #
@@ -136,12 +135,7 @@ PRODUCT_PACKAGES += \
     libgui_vendor \
     GCam 
 
-# Charging
-PRODUCT_PACKAGES += \
-    charger_res_images \
-    product_charger_res_images
-
-# ConsumerIr
+# Camera Shim
 PRODUCT_PACKAGES += \
     libcamera_sdm660_shim
 
