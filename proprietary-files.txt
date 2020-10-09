@@ -215,6 +215,7 @@ vendor/lib/libactuator_pseudo.so
 vendor/lib/libactuator_rohm_bu64243gwz.so
 
 # Camera-arcsoft
+vendor/lib/libarc_sensor_adapter.so
 vendor/lib/libarcsoft_aiscenedetection.so
 vendor/lib/libarcsoft_beautyshot.so
 vendor/lib/libarcsoft_blink_detection.so
@@ -235,6 +236,9 @@ vendor/lib/libarcsoft_low_light_hdr.so
 vendor/lib/libarcsoft_picbest.so
 vendor/lib/libarcsoft_relighting_pro_image.so
 vendor/lib/libarcsoft_smart_denoise.so
+vendor/lib/libarcsoft_videostabilizer.so
+vendor/lib/libarcvs.dep.so
+vendor/lib/libarcvs.so
 
 # Camera calibration files
 etc/camera/cp/CPCalibrationData.bin
@@ -3096,7 +3100,6 @@ vendor/etc/init/vendor.qti.hardware.qdutils_disp@1.0-service-qti.rc
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 
 # QMI
-etc/permissions/qti_libpermissions.xml|ef3c88495f2f61a2d16e1445113a9d80f8db0e0a
 etc/permissions/qti_permissions.xml
 vendor/bin/irsc_util
 vendor/bin/pd-mapper
@@ -3370,7 +3373,7 @@ bin/wfdservice
 etc/init/wfdservice.rc
 etc/wfdconfig.xml
 etc/wfdconfigsink.xml
-framework/WfdCommon.jar
+-framework/WfdCommon.jar
 lib/com.qualcomm.qti.wifidisplayhal@1.0.so
 lib/libFileMux.so
 lib/libOmxMux.so
@@ -3395,6 +3398,8 @@ lib/libwfduibcsink.so
 lib/libwfduibcsinkinterface.so
 lib/libwfduibcsrc.so
 lib/libwfduibcsrcinterface.so
+lib64/libmmosal.so
+lib64/libmmparser_lite.so
 lib64/libwfdclient.so
 lib64/libwfdnative.so
 -priv-app/WfdService/WfdService.apk
