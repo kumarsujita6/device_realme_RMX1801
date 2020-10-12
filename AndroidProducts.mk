@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/superior_RMX1801.mk
+    $(LOCAL_DIR)/octavi_RMX1801.mk
 
 COMMON_LUNCH_CHOICES := \
-    superior_RMX1801-user \
-    superior_RMX1801-userdebug \
-    superior_RMX1801-eng
+    octavi_RMX1801-user \
+    octavi_RMX1801-userdebug \
+    octavi_RMX1801-eng

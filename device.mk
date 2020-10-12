@@ -449,3 +449,7 @@ PRODUCT_PACKAGES += \
     libaacwrapper \
     libnl
 
+#HALS
+SRC_AUDIO_HAL_DIR := hardware/qcom-caf/$(msm8998)/audio
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/$(msm8998)/display
+SRC_MEDIA_HAL_DIR := hardware/qcom-caf/$(msm8998)/media

@@ -29,7 +29,7 @@ if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
 AOSP_ROOT="$MY_DIR"/../../..
 
-HELPER="$SUPERIOR_ROOT"/vendor/superior/build/tools/extract_utils.sh
+HELPER="$OCTAVI_ROOT"/vendor/superior/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -37,7 +37,7 @@ fi
 . "$HELPER"
 
 # Initialize the helper
-setup_vendor "$DEVICE" "$VENDOR" "$SUPERIOR_ROOT"
+setup_vendor "$DEVICE" "$VENDOR" "$OCTAVI_ROOT"
 
 # Copyright headers and guards
 write_headers
